@@ -39,6 +39,18 @@ router.post("/uploadfiles", (req, res) => {
   // 비디오를 서버에 저장한다.
 });
 
+router.post("/getVideoDetail", (req, res) => {
+
+  Video.findOne({ "_id": req.body.videoId })
+    .populate('writer')
+    .exec((err, videoDetail) => {
+      if (err) return res.status(400).send(err)
+      return res.status(200).json({ success: true, videoDetail })
+    })
+
+});
+
+
 router.post("/uploadVideo", (req, res) => {
 
   // 비디오 정보들을 저장한다.
