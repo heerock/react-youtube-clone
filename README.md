@@ -6,9 +6,12 @@ window -> ffmpeg 다운받아 환경설정후 터미널을 재접속 & vscode �
 
 
 ||    RDBMS   ||   MongoDB  ||<br/> 
-    Tablles   =>  Collections <br/>
+    Tables   =>  Collections <br/>
       Rows    =>   Documents  <br/>
     Columns   =>    Fields    <br/>
+
+
+
 
 
 

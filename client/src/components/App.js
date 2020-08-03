@@ -25,7 +25,7 @@ function App() {
           <Route
             exact
             path="/video/upload"
-            component={Auth(VideoUploadPage, false)}
+            component={Auth(VideoUploadPage, true)}
           />
         </Switch>
       </div>
