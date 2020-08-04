@@ -18,7 +18,7 @@ function SubscriptionPage() {
             userFrom: localStorage.getItem('userId')
         };
 
-        Axios.get('/api/video/getSubscriptionVideos', subscriptionVariables)
+        Axios.post('/api/video/getSubscriptionVideos', subscriptionVariables)
             .then(response => {
                 if (response.data.success) {
                     console.log(response.data)
